@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numArray">
+        <item>12 meseci</item>
+        <item>5 meseci</item>
+        <item>4 meseca</item>
+    </string-array>
+</resources>

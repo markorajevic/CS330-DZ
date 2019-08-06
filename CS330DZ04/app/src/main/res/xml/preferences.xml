@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Test">
+        <ListPreference
+            android:dialogTitle="Jedna godina ima?"
+            android:entries="@array/numArray"
+            android:entryValues="@array/numArray"
+            android:key="question"
+            android:summary="Choose an answer"
+            android:title="Jedna godina ima?" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Univerzitet info">
+        <PreferenceScreen android:title="Druga kategorija">
+            <EditTextPreference
+                android:key="name_preference"
+                android:title="Enter faculty name"
+                android:dialogTitle="Name" />
+            <EditTextPreference
+                android:key="address_preference"
+                android:title="Enter faculty address"
+                android:dialogTitle="Address" />
+            <Preference
+                android:title="ShowResults"
+                android:key="show"
+                />
+            <com.metropolitan.cs330_dz04.DatePreference
+                android:key="date"
+                android:title="Choose Date"
+                android:defaultValue="2018-03-18"
+                android:summary="Odaberite datum"
+                />
+            <com.metropolitan.cs330_dz04.TimePreference
+                android:key="time"
+                android:title="Choose Time"
+                android:summary="Odaberite Vreme"
+                />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
