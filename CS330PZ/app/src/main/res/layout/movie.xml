@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/edtImg"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryLight"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_insert_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtImg"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:hint="Ime"
+            android:textColorHint="@color/colorText" />
+
+        <EditText
+            android:id="@+id/edtGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtName"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:hint="Zanr"
+            android:textColorHint="@color/colorText" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtGenre"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:hint="Opis"
+            android:textColorHint="@color/colorText" />
+
+
+        <EditText
+            android:id="@+id/edtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtDescription"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:hint="Rating"
+            android:textColorHint="@color/colorText" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtRating"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Sacuvaj film"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="19"/>
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Lista filmova"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="19"/>
+
+    </RelativeLayout>
+
+</ScrollView>
